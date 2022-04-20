@@ -9,4 +9,12 @@ describe DockingStation do
     expect(bike.working?).to eq(true)
   end
 
+  it "It docks domething?" do
+    bike = Bike.new
+    subject.dock(bike)
+    expect(subject.bike).to eq(bike)
+  end
+
+
+ it {is_expected.to respond_to :dock }
 end
