@@ -1,7 +1,7 @@
 class DockingStation
 
   def release_bike
-    Bike.new
+    @bike == nil ? fail : @bike
   end
 
   def dock(bike)
